@@ -1,0 +1,6 @@
+n_ifos = 2
+batch_size = 32 
+iterations = 2
+learning_rate = 1e-3
+weight_decay = 1e-5
+out_dir="/Users/acye/Documents/Outrun/Sparrow/Program/Outputs"
