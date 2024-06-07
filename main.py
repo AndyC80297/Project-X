@@ -14,7 +14,7 @@ from libs.train.trainer import Validation
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-project_args = args_control("./arguments.toml")
+project_args = args_control(Path("./arguments.toml"), Path("../../Outputs"))
 
 SIZE_1, SIZE_2, SIZE_3 = 2*project_args["batch_size"], 2, 4096
 pseudo_data = torch.Tensor(np.random.normal(0, 1, (SIZE_1, SIZE_2, SIZE_3)))
